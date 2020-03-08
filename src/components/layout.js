@@ -25,15 +25,7 @@ const TemplateWrapper = ({ children }) => {
               ...GatsbyDatoCmsSeoMetaTags
             }
             heroImage {
-              id
-              alt
-              filename
-              height
-              size
-              title
               url
-              width
-              format
             }
             introTextNode {
               childMarkdownRemark {
@@ -114,7 +106,7 @@ const TemplateWrapper = ({ children }) => {
               </div>
             </div>
             <div className="ft__img">
-              <Img src={data.datoCmsHome.heroImage.url} />
+              <Link to="/">{data.datoCmsHome.heroImage.url}</Link>
             </div>
             {children}
           </div>
