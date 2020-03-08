@@ -113,6 +113,9 @@ const TemplateWrapper = ({ children }) => {
                 </div>
               </div>
             </div>
+            <div className="ft__img">
+              <Img src={data.datoCmsHome.heroImage.url} />
+            </div>
             {children}
           </div>
         </div>
