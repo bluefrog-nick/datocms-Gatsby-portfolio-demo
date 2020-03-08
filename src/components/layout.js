@@ -24,6 +24,17 @@ const TemplateWrapper = ({ children }) => {
             seoMetaTags {
               ...GatsbyDatoCmsSeoMetaTags
             }
+            heroImage {
+              id
+              alt
+              filename
+              height
+              size
+              title
+              url
+              width
+              format
+            }
             introTextNode {
               childMarkdownRemark {
                 html
@@ -40,6 +51,7 @@ const TemplateWrapper = ({ children }) => {
             }
           }
         }
+        
       `}
       render={data => (
         <div className={`container ${showMenu ? "is-open" : ""}`}>
